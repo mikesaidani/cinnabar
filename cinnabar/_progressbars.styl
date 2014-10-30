@@ -1,0 +1,12 @@
+flat-progressbar(_type, _width, _height = 10px)
+  background flat-getcolor('disabled')
+  border-radius flat-border-radius
+  height _height
+  position relative
+  &:after
+    background flat-getcolor(_type)
+    border-radius flat-border-radius
+    content '\20'
+    height _height
+    position absolute
+    width _width

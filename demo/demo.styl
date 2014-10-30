@@ -1,1 +1,46 @@
+@import 'citrine'
 @import 'cinnabar'
+
+citrine()
+
+html
+  font-family 'Montserrat', sans-serif
+
+main
+  padding rhythm(1, 16)
+
+section
+  margin-bottom rhythm(3, 16)
+
+#buttons
+  .default
+    flat-button(default)
+  .primary
+    flat-button(primary)
+  .success
+    flat-button(success)
+  .info
+    flat-button(info)
+  .warning
+    flat-button(warning)
+  .error
+    flat-button(danger)
+  .disabled
+    flat-button(disabled)
+
+#inputs
+  .default
+    flat-input(default)
+  .success
+    flat-input(success)
+  .info
+    flat-input(info)
+  .error
+    flat-input(danger)
+  .disabled
+    flat-input(disabled)
+
+#progressbars
+  div
+    width 30%
+    flat-progressbar(success, 70%)

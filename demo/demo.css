@@ -1,0 +1,414 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+     v2.0 | 20110126
+     License: none (public domain)
+  */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+html {
+  font-size: 100%;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+}
+body {
+  font-size: 1rem;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+h1 {
+  font-size: 2.44140625rem;
+}
+h2 {
+  font-size: 1.953125rem;
+}
+h3 {
+  font-size: 1.5625rem;
+}
+h4 {
+  font-size: 1.25rem;
+}
+h5 {
+  font-size: 1rem;
+}
+h6 {
+  font-size: 0.8rem;
+}
+p {
+  font-size: 1rem;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+dl {
+  margin: 0 0 0.75rem;
+}
+ul ul,
+ol ol,
+dl dt,
+dl dd {
+  margin: 0 0 0 0.75rem;
+}
+img {
+  margin: 0;
+  max-width: 100%;
+}
+strong {
+  font-weight: bold;
+}
+small {
+  font-size: 0.8rem;
+}
+html {
+  font-family: 'Montserrat', sans-serif;
+}
+main {
+  padding: 0.75rem;
+}
+section {
+  margin-bottom: 2.25rem;
+}
+#buttons .default {
+  background: #bdc3c7;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  display: inline-block;
+  font: inherit;
+  font-size: 1rem;
+  outline: none;
+  padding: 0.75rem 3rem;
+  -webkit-transition: background-color 0.3s linear;
+          transition: background-color 0.3s linear;
+  cursor: pointer;
+}
+#buttons .default:hover {
+  background: #cacfd2;
+}
+#buttons .default:active {
+  background: #89939a;
+}
+#buttons .primary {
+  background: #22a7f0;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  display: inline-block;
+  font: inherit;
+  font-size: 1rem;
+  outline: none;
+  padding: 0.75rem 3rem;
+  -webkit-transition: background-color 0.3s linear;
+          transition: background-color 0.3s linear;
+  cursor: pointer;
+}
+#buttons .primary:hover {
+  background: #4eb9f3;
+}
+#buttons .primary:active {
+  background: #0d81c0;
+}
+#buttons .success {
+  background: #3fc380;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  display: inline-block;
+  font: inherit;
+  font-size: 1rem;
+  outline: none;
+  padding: 0.75rem 3rem;
+  -webkit-transition: background-color 0.3s linear;
+          transition: background-color 0.3s linear;
+  cursor: pointer;
+}
+#buttons .success:hover {
+  background: #65cf99;
+}
+#buttons .success:active {
+  background: #2e9360;
+}
+#buttons .info {
+  background: #3498db;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  display: inline-block;
+  font: inherit;
+  font-size: 1rem;
+  outline: none;
+  padding: 0.75rem 3rem;
+  -webkit-transition: background-color 0.3s linear;
+          transition: background-color 0.3s linear;
+  cursor: pointer;
+}
+#buttons .info:hover {
+  background: #5dade2;
+}
+#buttons .info:active {
+  background: #1f74ad;
+}
+#buttons .warning {
+  background: #eb9532;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  display: inline-block;
+  font: inherit;
+  font-size: 1rem;
+  outline: none;
+  padding: 0.75rem 3rem;
+  -webkit-transition: background-color 0.3s linear;
+          transition: background-color 0.3s linear;
+  cursor: pointer;
+}
+#buttons .warning:hover {
+  background: #efaa5b;
+}
+#buttons .warning:active {
+  background: #c37113;
+}
+#buttons .error {
+  background: #e74c3c;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  display: inline-block;
+  font: inherit;
+  font-size: 1rem;
+  outline: none;
+  padding: 0.75rem 3rem;
+  -webkit-transition: background-color 0.3s linear;
+          transition: background-color 0.3s linear;
+  cursor: pointer;
+}
+#buttons .error:hover {
+  background: #ec7063;
+}
+#buttons .error:active {
+  background: #c22818;
+}
+#buttons .disabled {
+  background: #ececec;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  display: inline-block;
+  font: inherit;
+  font-size: 1rem;
+  outline: none;
+  padding: 0.75rem 3rem;
+  -webkit-transition: background-color 0.3s linear;
+          transition: background-color 0.3s linear;
+}
+#inputs .default {
+  border: 2px solid #bdc3c7;
+  border-radius: 6px;
+  font: inherit;
+  font-size: 1rem;
+  outline: none;
+  padding: 0.75rem;
+  -webkit-transition: border-color 0.3s linear, color 0.3s linear;
+          transition: border-color 0.3s linear, color 0.3s linear;
+}
+#inputs .default:focus {
+  border-color: #22a7f0;
+}
+#inputs .success {
+  border: 2px solid #3fc380;
+  border-radius: 6px;
+  font: inherit;
+  font-size: 1rem;
+  outline: none;
+  padding: 0.75rem;
+  -webkit-transition: border-color 0.3s linear, color 0.3s linear;
+          transition: border-color 0.3s linear, color 0.3s linear;
+  color: #3fc380;
+}
+#inputs .info {
+  border: 2px solid #3498db;
+  border-radius: 6px;
+  font: inherit;
+  font-size: 1rem;
+  outline: none;
+  padding: 0.75rem;
+  -webkit-transition: border-color 0.3s linear, color 0.3s linear;
+          transition: border-color 0.3s linear, color 0.3s linear;
+  color: #3498db;
+}
+#inputs .error {
+  border: 2px solid #e74c3c;
+  border-radius: 6px;
+  font: inherit;
+  font-size: 1rem;
+  outline: none;
+  padding: 0.75rem;
+  -webkit-transition: border-color 0.3s linear, color 0.3s linear;
+          transition: border-color 0.3s linear, color 0.3s linear;
+  color: #e74c3c;
+}
+#inputs .disabled {
+  border: 2px solid #ececec;
+  border-radius: 6px;
+  font: inherit;
+  font-size: 1rem;
+  outline: none;
+  padding: 0.75rem;
+  -webkit-transition: border-color 0.3s linear, color 0.3s linear;
+          transition: border-color 0.3s linear, color 0.3s linear;
+  color: #fff;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+#progressbars div {
+  width: 30%;
+  background: #ececec;
+  border-radius: 6px;
+  height: 10px;
+  position: relative;
+}
+#progressbars div:after {
+  background: #3fc380;
+  border-radius: 6px;
+  content: '\20';
+  height: 10px;
+  position: absolute;
+  width: 70%;
+}

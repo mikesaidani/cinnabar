@@ -1,0 +1,18 @@
+flat-input(type)
+  _color = flat-getcolor(type)
+  border 2px solid _color
+  border-radius flat-border-radius
+  font inherit
+  font-size remify(16)
+  outline none
+  padding rhythm(1, 16)
+  transition border-color .3s linear, color .3s linear
+  if type isnt 'default' && type isnt 'disabled'
+    color _color
+  if type is 'disabled'
+    color white
+    pointer-events none
+    user-select none
+  if type is 'default'
+    &:focus
+      border-color flat-getcolor('primary')

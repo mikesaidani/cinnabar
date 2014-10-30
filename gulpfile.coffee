@@ -2,7 +2,7 @@ gulp        = require 'gulp'
 connect     = require 'gulp-connect'
 stylus      = require 'gulp-stylus'
 prefix      = require 'gulp-autoprefixer'
-cinnabar     = require './cinnabar'
+cinnabar    = require './cinnabar'
 
 gulp.task 'stylesheets', () ->
   gulp.src './demo/demo.styl'
