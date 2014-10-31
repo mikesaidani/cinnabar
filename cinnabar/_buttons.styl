@@ -1,6 +1,6 @@
-flat-button(type)
-  color = flat-getcolor(type)
-  background color
+flat-button(_type)
+  _color = flat-getcolor(_type)
+  background _color
   border none
   border-radius flat-border-radius
   color white
@@ -13,6 +13,6 @@ flat-button(type)
   if type isnt 'disabled'
     cursor pointer
     &:hover
-      background lighten(color, 20%)
+      background lighten(_color, 20%)
     &:active
-      background darken(color, 25%)
+      background darken(_color, 25%)
